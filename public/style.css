@@ -1,0 +1,68 @@
+html,
+body {
+    height: 98%;
+    overflow: hidden;
+}
+
+main {
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.room {
+    display: flex;
+}
+
+
+.message__feed {
+    height: 95%;
+    width: fit-content;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+
+
+    .chat {
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+
+        .message__receive {
+            align-self: flex-start;
+            background-color: #f0f0f0;
+            color: black;
+            margin-left: 10px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: 2px;
+            border-color: black;
+        }
+
+        .message__me {
+            align-self: flex-end;
+            background-color: #000000;
+            color: white;
+            margin-right: 10px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: 2px;
+            border-color: black;
+
+        }
+    }
+
+    .message__sender {
+        display: flex;
+        flex-direction: row;
+    }
+}
